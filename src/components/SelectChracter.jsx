@@ -5,6 +5,7 @@ const SelectCharacter = () => {
   const [characterImg, setCharacterImg] = useState(
     "url(./assets/characters/f1.png)"
   );
+  // select characters
   return (
     <div className="select-area">
       <select

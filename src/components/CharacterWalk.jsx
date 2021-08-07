@@ -19,18 +19,20 @@ const CharacterWalk = (characterImg) => {
     localStorage.setItem("position", JSON.stringify({ positionx, positiony }));
   }, [positionx, positiony]);
 
+  // walk animations for character , settings only image x position
   const walkAnimation = () => {
     setBgPositionx(bgpositionx + 32);
     if (bgpositionx > 32) {
       setBgPositionx(0);
     }
   };
-
+  // changing character walks speed
   const walkSpeed = () => {
     if (stepSize === 16) setStepSize(32);
     else setStepSize(16);
   };
 
+  // key settings
   useKeyPress((e) => {
     switch (e.key) {
       case " ":

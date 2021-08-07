@@ -9,7 +9,6 @@ function App() {
       </div>
       <div className="game-area">
         <SelectCharacter />
-
         <div className="game-tips">
           <h3>GAME TIPS</h3>
           <p>-You can use arrow keys on game !</p>

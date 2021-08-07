@@ -7,6 +7,7 @@ const Character = ({
   bgpositiony,
   characterImg,
 }) => {
+  // my characters components
   return (
     <div
       style={{
