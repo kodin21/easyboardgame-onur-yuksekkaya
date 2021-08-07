@@ -3,7 +3,7 @@ import CharacterWalk from "./CharacterWalk";
 
 const SelectCharacter = () => {
   const [characterImg, setCharacterImg] = useState(
-    "url(./assets/characters/f2.png)"
+    "url(./assets/characters/f1.png)"
   );
   return (
     <div className="select-area">
@@ -12,15 +12,13 @@ const SelectCharacter = () => {
         name="character"
         id="character"
         onChange={(e) => {
-          if (e.target.value === "fm1")
-            setCharacterImg("url(./assets/characters/f1.png)");
-          else setCharacterImg("url(./assets/characters/f2.png)");
+          setCharacterImg(`url(./assets/characters/${e.target.value}.png)`);
         }}
       >
-        <option className="dropdown-options" value="fm1">
+        <option className="dropdown-options" value="f1">
           Female Character 1
         </option>
-        <option className="dropdown-options" value="fm2">
+        <option className="dropdown-options" value="f2">
           Female Character 2
         </option>
       </select>

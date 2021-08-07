@@ -32,24 +32,31 @@ const CharacterWalk = (characterImg) => {
   };
 
   useKeyPress((e) => {
-    if (e.key === " ") walkSpeed();
-    else if (e.key === "ArrowRight") {
-      setPositionx(positionx + stepSize);
-      walkAnimation();
-      setBgPositiony(64);
-      // setCharacterImg("url(./assets/characters/f1.png)");
-    } else if (e.key === "ArrowLeft") {
-      setPositionx(positionx - stepSize);
-      walkAnimation();
-      setBgPositiony(32);
-    } else if (e.key === "ArrowUp") {
-      setPositiony(positiony - stepSize);
-      walkAnimation();
-      setBgPositiony(96);
-    } else if (e.key === "ArrowDown") {
-      setPositiony(positiony + stepSize);
-      walkAnimation();
-      setBgPositiony(0);
+    switch (e.key) {
+      case " ":
+        walkSpeed();
+        break;
+      case "ArrowDown":
+        setPositiony(positiony + stepSize);
+        walkAnimation();
+        setBgPositiony(0);
+        break;
+      case "ArrowLeft":
+        setPositionx(positionx - stepSize);
+        walkAnimation();
+        setBgPositiony(32);
+        break;
+      case "ArrowRight":
+        setPositionx(positionx + stepSize);
+        walkAnimation();
+        setBgPositiony(64);
+        break;
+      case "ArrowUp":
+        setPositiony(positiony - stepSize);
+        walkAnimation();
+        setBgPositiony(96);
+        break;
+      default:
     }
     e.preventDefault();
   });

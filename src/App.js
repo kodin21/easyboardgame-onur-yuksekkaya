@@ -1,5 +1,4 @@
 import "./App.css";
-import CharacterWalk from "./components/CharacterWalk";
 import SelectCharacter from "./components/SelectChracter";
 
 function App() {
