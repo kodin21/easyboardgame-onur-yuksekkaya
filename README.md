@@ -1,4 +1,5 @@
 ## [Live Demo ()=>](https://boardgame-onuryks.netlify.app/)
+![##SCREEEN SHOOT](https://user-images.githubusercontent.com/51006791/128615084-d36ecc3b-7b24-4e8e-aa46-ddcc3a055b7a.png)
 
 
 ## HAFTA 4 - ÖDEV
